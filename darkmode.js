@@ -21,17 +21,17 @@
   };
 
   const images = [
-    ...document.querySelectorAll("img[data-has-dark-image=next]")
+    ...document.querySelectorAll("img[data-has-dark-image=next]"),
   ].map((el) => {
     return {
       lightImage: {
         el: el,
-        loaded: false
+        loaded: false,
       },
       darkImage: {
         el: el.nextElementSibling,
-        loaded: false
-      }
+        loaded: false,
+      },
     };
   });
 
@@ -125,3 +125,5 @@
     }
   });
 })();
+
+// Testing
