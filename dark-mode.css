@@ -1,0 +1,466 @@
+/* Root colors */
+.dm {
+  --color-primary-blue: #3444da;
+  --color-icon: #6d7cff;
+  --color-icon-light: rgba(189, 208, 255, 0.5);
+  --color-logo: #e5efff;
+  --color-dm-main-bg: #050505;
+  --color-dm-primary-text: #bbb;
+  --color-dm-secondary-text: #eee;
+  --color-dm-accent: #6d7cff;
+  --color-dm-sec-btn: #25252e;
+  --color-dm-sec-bg: rgba(63, 66, 214, 0.09);
+  --color-dm-tertiary-bg: rgba(50, 60, 131, 0.16);
+  --color-dm-sec-border: rgba(202, 204, 255, 0.1);
+  --color-dm-icon-bg: rgba(255, 255, 255, 0.05);
+}
+
+/*** Global Styles ***/
+body.dm {
+  background-color: var(--color-dm-main-bg);
+  color: var(--color-dm-primary-text);
+}
+
+.dm h1,
+.dm h2,
+.dm h3,
+.dm h4,
+.dm h5,
+.dm h6,
+.dm .heading-style-h4-bigger,
+.dm .heading-style-h2-smaller {
+  color: var(--color-dm-secondary-text);
+}
+
+.dm .secondary-highlight-text {
+  background-image: linear-gradient(105deg, #5294f3 9%, #76b2f2 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dm .primary-highlight-text {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(105deg, #3279f4 9%, #9ed3f0 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.dm .cursur-play,
+.dm .cursor-slider {
+  color: var(--color-dm-main-bg);
+  background-color: rgba(238, 238, 238, 0.9);
+}
+
+.dm .text-color-secondary {
+  color: var(--color-dm-secondary-text);
+}
+
+.dm .hyperlink {
+  color: var(--color-dm-accent);
+}
+
+/* Buttons */
+.dm .button-v5-arrow:hover {
+  background-color: var(--color-dm-sec-btn);
+  transform: scale3d(1.03, 1.03, 1);
+  color: var(--color-dm-secondary-text);
+}
+
+.dm .button-v5-arrow:hover .button-arrow {
+  color: var(--color-dm-accent);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dm .button-v5-arrow-dark {
+  background-color: var(--color-dm-sec-btn);
+  color: var(--color-dm-secondary-text);
+}
+
+.dm .button-v5-arrow-dark .button-arrow {
+  color: var(--color-dm-accent);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*** Global sections  ***/
+/* Header */
+.dm .nav_menu-link {
+  color: var(--color-dm-secondary-text);
+}
+
+.dm .nav_menu-link:hover {
+  color: var(--color-dm-primary-text);
+}
+
+.dm .nav_menu-link.is-dropdown.w--open {
+  color: var(--color-dm-secondary-text);
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.dm .nav_dropdown-list {
+  background-color: #19192c;
+}
+
+.dm .nav_dropdown-item {
+  border-color: rgba(202, 204, 255, 0.17);
+}
+
+.dm .nav_dropdown-item:hover {
+  border-color: rgba(235, 235, 235, 0.3);
+}
+
+.dm .nav_dropdown-list-icn-wrapper {
+  background-color: rgba(171, 190, 255, 0.05);
+}
+
+.dm .menu_lottie {
+  filter: invert(0);
+}
+
+.dm .nav_menu-link.w--current {
+  color: var(--color-dm-secondary-text);
+}
+
+@media screen and (max-width: 991px) {
+  .dm .nav_wrapper {
+    background-color: var(--color-dm-main-bg);
+  }
+
+  .dm .nav_menu-link.is-dropdown.w--open {
+    background-color: transparent;
+  }
+}
+
+/* Footer */
+.dm .footer_links:hover {
+  color: var(--color-dm-secondary-text);
+}
+
+.dm .social_link-item {
+  background-color: rgb(52 68 218 / 66%);
+
+  color: var(--color-dm-primary-text);
+}
+
+.dm .social_linkbg {
+  background-color: var(--color-dm-main-bg);
+  background-image: linear-gradient(
+    to bottom,
+    hsl(0deg 0% 100% / 5%),
+    hsl(0deg 0% 100% / 9%)
+  );
+}
+
+.dm .social_link-item:hover {
+  background-color: var(--color-primary-blue);
+}
+
+/* FAQs section*/
+.dm .main_faq-holder {
+  background-image: linear-gradient(
+    rgba(70, 88, 118, 0.06),
+    rgba(70, 88, 118, 0.06)
+  );
+  background-color: var(--color-dm-main-bg);
+}
+
+.dm .main-faq_question-wrap {
+  color: var(--color-dm-secondary-text);
+}
+
+/*** Hire Engineer global sections ***/
+/* trusted by section */
+.dm .section_trusted-by .trust_logo-card-inner-v4 {
+  background-color: var(--color-dm-main-bg);
+  background-image: linear-gradient(
+    rgba(95, 90, 159, 0.04),
+    rgba(95, 90, 159, 0.04)
+  );
+}
+
+.dm .section_trusted-by .trust_logo-card {
+  background: linear-gradient(
+    104.62deg,
+    rgba(50, 69, 244, 0.3) 9.73%,
+    rgba(158, 211, 240, 0.3) 89.64%
+  );
+}
+
+/* Ali Video Section */
+.dm .video-bg-line-shadow {
+  background-image: linear-gradient(rgba(2, 2, 3, 0), #020203 73%);
+}
+
+.dm .video-circle {
+  background-color: rgba(83, 74, 179, 0.11);
+}
+
+.dm .jv_video-play-btn {
+  background-color: rgba(216, 216, 255, 0.15);
+}
+
+/* Hard section */
+.dm .secondary-button {
+  background-color: #0d1135;
+  border: 1px solid rgba(193, 193, 193, 0.09);
+}
+
+.dm .remote-text-wrap {
+  background-color: rgba(86, 87, 128, 0.09);
+}
+
+.dm .remote-circle {
+  background-color: rgba(86, 87, 128, 0.09);
+}
+
+/* Easy section */
+.dm .make_easy-card {
+  background-color: var(--color-dm-tertiary-bg);
+}
+
+.dm .make-easy-step-circle {
+  background-color: var(--color-dm-icon-bg);
+}
+
+.dm .make-easy-title {
+  color: var(--color-dm-secondary-text);
+}
+
+/* How it works section */
+.dm .indicator-dot,
+.dm .active-indicator {
+  background-color: #2b3166;
+}
+
+.dm .active-indicator div {
+  background-color: var(--color-dm-accent);
+}
+
+.dm .slide-no {
+  color: var(--color-dm-icon-bg);
+}
+
+.dm .how-menu-nav--active {
+  color: var(--color-dm-secondary-text);
+}
+
+.dm .hiw-border {
+  border-left-color: rgba(255, 255, 255, 0.35);
+}
+
+.dm .hiw-path-shadow {
+  background-image: linear-gradient(transparent, var(--color-dm-main-bg));
+}
+
+/* Offerings section */
+.dm .card-v4 {
+  background-color: var(--color-dm-tertiary-bg);
+}
+
+.dm .card-icon-wrapper {
+  background-color: var(--color-dm-sec-border);
+}
+
+.dm .card-v4:hover {
+  background-color: rgba(50, 60, 131, 0.35);
+}
+
+/* CTA section */
+.dm .hiredev_cta-holder-inner {
+  background-color: rgba(33, 37, 122, 0.22);
+}
+
+/* Technologies section */
+.dm .know_tech_logos-holder {
+  background-color: var(--color-dm-sec-bg);
+}
+
+.dm .tech-logo-shadow {
+  background-image: linear-gradient(270deg, rgba(8, 9, 20, 0) 0%, #080914 100%);
+}
+
+.dm .tech-logo-shadow-right {
+  background-image: linear-gradient(270deg, #080914 0%, rgba(8, 9, 20, 0) 100%);
+}
+
+/* Why work at micro1 section */
+.dm .why_micro-button {
+  background-color: var(--color-dm-sec-bg);
+}
+
+/* Case study section*/
+.dm .work_slide-inner {
+  background-color: rgba(52, 68, 218, 0.1);
+  border-color: #252d43;
+}
+
+.dm .devhired {
+  background-color: rgba(176, 189, 255, 0.08);
+}
+
+.dm .swiper-pagination-bullet {
+  background: var(--color-dm-secondary-text) !important;
+}
+
+/** COR page **/
+/* features */
+.dm .card-v4-cor {
+  background-color: var(--color-dm-tertiary-bg);
+}
+
+.dm .card-icon-wrapper-big {
+  background-color: var(--color-dm-sec-border);
+}
+
+@media screen and (max-width: 991px) {
+  .dm .card-v4-cor {
+    border-color: var(--color-dm-sec-border);
+  }
+}
+
+/* how it works */
+.dm .slide-img {
+  background-color: var(--color-dm-main-bg);
+}
+
+/* pricing */
+.dm .cor-pricing-wrapper {
+  background-color: var(--color-dm-tertiary-bg);
+  border-color: var(--color-dm-sec-border);
+}
+
+/*** Vetting process ***/
+/* How we hire */
+.dm .hwh_step-card-inner {
+  background-color: var(--color-dm-tertiary-bg);
+}
+
+.dm .hwh_step-title {
+  color: var(--color-dm-secondary-text);
+}
+
+.dm .hwh_step-icon-circle {
+  background-color: var(--color-dm-icon-bg);
+}
+
+.dm .hwh-step-circle-inner {
+  background-color: #0f0f15;
+}
+
+.dm .hwh_topdev-grd-circle-inner {
+  background-color: var(--color-dm-tertiary-bg);
+  color: var(--color-dm-secondary-text);
+}
+
+.dm .div-block-37 {
+  background-color: var(--color-dm-sec-border);
+}
+
+.dm .hwh-line-shadow {
+  background-image: linear-gradient(transparent, #050505);
+}
+
+.dm .step-border-line.vetting__pro {
+  border-right: 1px solid rgba(164, 183, 216, 0.4);
+}
+
+@media screen and (max-width: 991px) {
+  .dm .hwh_topdev-grd-circle-inner {
+    border-color: var(--color-dm-sec-border);
+  }
+}
+
+/*** How it works ***/
+.dm .how_w-card-inner {
+  background-color: var(--color-dm-tertiary-bg);
+}
+
+.dm .how_w-icon-wrap {
+  background-color: var(--color-dm-icon-bg);
+}
+
+.dm .how_w-step-no {
+  background-image: linear-gradient(
+    180deg,
+    #ffffff 12.67%,
+    rgba(255, 255, 255, 0) 75.33%
+  );
+}
+
+.dm .who-we-card-inner {
+  background-color: var(--color-dm-tertiary-bg);
+}
+
+@media screen and (max-width: 991px) {
+  .dm .how_w-card-inner {
+    border-color: var(--color-dm-sec-border);
+  }
+}
+
+/*** Pricing page ***/
+.dm .pricing-card {
+  background-color: var(--color-dm-tertiary-bg);
+}
+
+@media screen and (max-width: 991px) {
+  .dm .pricing-card {
+    border-color: var(--color-dm-sec-border);
+  }
+}
+
+/*** Apply as engineer page ***/
+.dm .m_dev-card-inner.dev-card-bg {
+  background-color: rgba(20, 25, 73, 0.16);
+}
+
+@media screen and (max-width: 991px) {
+  .dm .m_dev-card-inner.dev-card-bg {
+    border-color: var(--color-dm-sec-border);
+  }
+}
+
+.dm .devlocation-inner {
+  background-color: var(--color-dm-main-bg);
+}
+
+.dm .section_salary {
+  background-color: var(--color-dm-tertiary-bg);
+}
+
+/*** microLab page ***/
+.dm .awards-circle-inner,
+.dm .award-circle-outer {
+  border: 1px solid rgb(109 97 243 / 15%);
+}
+
+.dm .awards-logo-holder {
+  background-color: var(--color-dm-tertiary-bg);
+  border-color: var(--color-dm-sec-border);
+}
+
+.dm .why-micro1-right-col {
+  background-color: var(--color-dm-tertiary-bg);
+}
+
+.dm .cs-play_btn-bg.is-dark {
+  background-color: var(--color-dm-icon-bg);
+}
+
+@media screen and (max-width: 991px) {
+  .dm .why-micro1-right-col {
+    border-color: var(--color-dm-sec-border);
+  }
+}
+
+/*** Blog archive ***/
+.blog-stats-section .who-we-card-inner {
+  background-color: var(--color-lm-main-bg);
+}
+
+.dm .featured-blog-author-inner {
+  background-color: var(--color-dm-tertiary-bg);
+}
+
+.dm .blog-archive-inner {
+  background-color: var(--color-dm-tertiary-bg);
+}
